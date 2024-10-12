@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(221, 221, 223); */
+}
+
+.main-content{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    
+}
+
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    /* height: fit-content; */
+    
+}
+.content{
+    flex: 1 1 300px;
+    width: fit-content;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content img{
+    width: 1.5 rem;
+    height: 1.5 rem;
+    border-radius: 20px;
+}
+
+.content span{
+    color: grey;
+}
+
+.large{
+    flex: 2 1 500px;
+}
+
+.content:nth-child(4){
+    flex: 1 1 300px;
+}
+
+.content:nth-last-child(1){
+    flex: 1 1 600px;
+}
+
+
+.absolute{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: -1;
+}
+
+.content img{
+    float: left;
+}
+
+.content .word{
+    clear: both;
+}
+
+.card-1{
+    background-color: #733FC8;
+}
+
+.card-2{
+    background-color: #49556B;
+}
+
+.card-4{
+    background-color: white;
+    color: black;
+}
+
+.card-5{
+    background-color: #18202D;
+}
+@media(max-width:450px){
+    .card-1, .card-4, .card-5{
+        height: auto;
+        width: fit-content;
+    }
+    .main-content{
+        flex-wrap: wrap;
+    }
+
+}
+
+aside{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: white
+}
+
+aside span{
+    color: gray;
+}
+    
+  
+    
+   
+   
